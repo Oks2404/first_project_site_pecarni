@@ -1046,6 +1046,65 @@ text-align: center; /*ставим по центру*/
     margin-bottom: 20px; /* делаем отсуп толкая следущий элемент 20рх*/
 }
 
+https://habr.com/ru/company/otus/blog/580442/
+Нарыл очень хорошую статью про сбросы в CSS. Думаю она может очень пригодиться.)
+
+3.30 Как добавить интерактивную карту на сайт
+https://yandex.ru/map-constructor/ - конструктор яндекс карт
+https://www.google.com/maps/place/%D0%9F%D0%B5%D0%BA%D0%B0%D1%80%D0%BD%D1%8F+%D0%A5%D0%BB%D0%B5%D0%B1%D0%BD%D0%B8%D1%86%D0%B0/@51.8396739,55.1215867,15z/data=!4m10!1m2!2m1!1z0L_QtdC60LDRgNC90Y8!3m6!1s0x417bf680ad883e6b:0xa59b20fb294fdc64!8m2!3d51.8371784!4d55.1336535!15sCg7Qv9C10LrQsNGA0L3Rj1oQIg7Qv9C10LrQsNGA0L3Rj5IBBmJha2VyeZoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VSSE9XRTNaekZuUlJBQuABAA!16s%2Fg%2F11g9vt5htb?hl=ru-RU&entry=ttu
+
+        </section>
+        <section class="section-map">
+            <h3 class="section-map__title">ЗАКАЗАТЬ</h3>
+            <iframe class="section-map__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A2832f0430c7b3eb0a5dc9ffbcf22e00029a5f2435d446ce31f854bbf6b9934df&amp;source=constructor" width="900" height="400" frameborder="0"></iframe>
+
+        </section>
+
+
+.section-map__title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 36px;
+}
+
+.section-map__map {/*Делаем элемент блочным при помощи display: block; и меняем расположение на центральное при помощи margin: 0 auto;  */
+    margin-bottom: 20px; /*оттолнем от карты на 20 рх блок который будет ниже*/
+    display: block;
+    margin: 0 auto; 
+}
+
+ 3.31 Тег HR или как отрисовать линию
+
+
+    <footer>
+<!--         <hr> линию можно нарисовать через этот не парный тег -->
+        <div class="line"></div>
+        <nav>
+            <ul><!-- обоначем список с помощью #- делаем заглушку для ссылки -->
+                <li> <a href="#"> О НАС</a></li> <!-- обозначем элементы списка -->
+                <li> <a href="#"> НОВОСТИ</a></li>
+                <li> <a href="#"> МЕНЮ</a></li>
+                <li> <a href="#"> КОНТАКТЫ</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+
+.line {/*стилизуем линию в теге div*/
+    border-top: 1px solid #999999;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+/* .hr {
+    border: none;
+    border-top:  1px solid #999999;
+    width: 1024px;
+    margin: 0 auto;
+} стилизуем линию в непарном теге */
+
+
+
 
             
 
